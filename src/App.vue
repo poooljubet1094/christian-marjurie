@@ -1,23 +1,20 @@
 <script setup lang="ts">
 import HomePage from './components/HomePage.vue'
+import NavMenu from './components/NavMenu.vue'
 </script>
 
 <template>
-  <div class="main-container">
+  <NavMenu />
+  <div class="w-full max-w-7xl flex flex-col justify-center items-center mx-auto py-16">
     <HomePage />
   </div>
-  
+  <div class="w-full flex justify-center items-center">
+    <audio controls autoplay>
+      <source src="./assets/background-sound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 </template>
 
 <style lang="css" scoped>
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url("./assets/home-page-background.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>

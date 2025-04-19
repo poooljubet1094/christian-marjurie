@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
 @import 'tailwindcss';
 
 :root {
-  font-family: "Parisienne", cursive, Helvetica, Arial, sans-serif;
+  font-family: "Pinyon Script", cursive,  Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: #894522;
+  background-color: #eddbcf;
+}
+
+@theme {
+  --font-pinyon: "Pinyon Script", cursive;
 }

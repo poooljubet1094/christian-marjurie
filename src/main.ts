@@ -9,6 +9,7 @@ import ProgramPage from './components/ProgramPage.vue'
 import OurStoryPage from './components/OurStoryPage.vue'
 import PhotosPage from './components/PhotosPage.vue'
 import RsvpPage from './components/RsvpPage.vue'
+import EntouragePage from './components/EntouragePage.vue'
 
 const router = createRouter({
     history: createMemoryHistory(),
@@ -16,6 +17,7 @@ const router = createRouter({
         { path: '/', component: HomePage },
         { path : '/venue', component: VenuePage },
         { path : '/programme', component: ProgramPage },
+        { path : '/entourage', component: EntouragePage },
         { path : '/our-story', component: OurStoryPage },
         { path : '/photos', component: PhotosPage },
         { path : '/rsvp', component: RsvpPage },

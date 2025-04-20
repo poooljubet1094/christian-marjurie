@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <h1>Program Page</h1>
+    <h1>Programme</h1>
 </template>

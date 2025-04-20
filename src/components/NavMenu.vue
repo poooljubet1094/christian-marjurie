@@ -9,6 +9,7 @@
                 <router-link to="/">Home</router-link>
                 <router-link to="/venue">Venue</router-link>
                 <router-link to="/programme">Programme</router-link>
+                <router-link to="/entourage">Entourage</router-link>
                 <router-link to="/our-story">Our Story</router-link>
                 <router-link to="/photos">Photos</router-link>
                 <router-link to="/rsvp">RSVP</router-link>

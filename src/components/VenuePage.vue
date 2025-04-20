@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="w-full pb-2">
+    <div class="w-full px-2">
         <div class="font-serif border-b pb-8 w-full" style="border-color: #a74d0f;">
             <div class="uppercase text-2xl flex flex-wrap flex-col items-center justify-center my-auto mb-4" >
                 <div class="">Diocese of Imus Parish of </div>

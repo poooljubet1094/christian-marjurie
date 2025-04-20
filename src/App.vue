@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
   <NavMenu />
-  <div class="w-full max-w-7xl flex flex-col justify-center items-center mx-auto py-16">
+  <div class="w-full max-w-7xl flex flex-col justify-center items-center mx-auto py-8" style="color: #a74d0f">
     <router-view></router-view>
   </div>
   <div class="w-full flex justify-center items-center mb-8">

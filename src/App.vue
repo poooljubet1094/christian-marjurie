@@ -1,6 +1,25 @@
 <script setup lang="ts">
 import HomePage from './components/HomePage.vue'
 import NavMenu from './components/NavMenu.vue'
+import { ref, onMounted } from 'vue'
+
+const audioPlayer = ref<HTMLAudioElement | null>(null)
+
+console.log(audioPlayer.value);
+
+const playAudio = () => {
+  if (audioPlayer.value) {
+    audioPlayer.value.play()
+  }
+}
+
+onMounted(() => {
+  if (audioPlayer.value) {
+    audioPlayer.value.loop = true // Loop the audio
+    playAudio()
+  }
+})
+
 </script>
 
 <template>
@@ -8,8 +27,8 @@ import NavMenu from './components/NavMenu.vue'
   <div class="w-full max-w-7xl flex flex-col justify-center items-center mx-auto py-16">
     <HomePage />
   </div>
-  <div class="w-full flex justify-center items-center">
-    <audio controls autoplay>
+  <div class="w-full flex justify-center items-center mb-8">
+    <audio ref="audioPlayer" controls autoplay>
       <source src="./assets/background-sound.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>

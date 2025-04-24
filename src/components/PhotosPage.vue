@@ -64,7 +64,7 @@
                 <img src="../assets/gallery/taiwan/image8.jpeg" alt="Hero Image" class="w-full h-full rounded-2xl object-contain bg-amber-50" />
             </div>
             <div class="w-auto h-96 rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                <img src="../assets/gallery/engagement/image9.jpg" alt="Hero Image" class="w-full h-full rounded-2xl object-contain bg-amber-50" />
+                <img src="../assets/gallery/engagement/image9.JPG" alt="Hero Image" class="w-full h-full rounded-2xl object-contain bg-amber-50" />
             </div>
         </div>
     </div>

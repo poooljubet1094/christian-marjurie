@@ -5,38 +5,38 @@ import { doc, setDoc, Timestamp } from 'firebase/firestore'
 
 let name = '';
 let count = 1;
-let accept = true;
+let accept = ref(true);
 let notes = '';
-let submitted = false;
-let submitting = false;
+let submitted = ref(false);
+let submitting = ref(false);
 const errors = ref({
     name: [] as string[],
 })
 
 async function submitForm() {
     errors.value.name = [];
-    if (name === '' || this.name == undefined) {
+    if (name === '' || name == undefined) {
         errors.value.name.push("The name field is required.")
         return
     }
 
-    this.submitting = true
+    submitting.value = true
     
-    await setDoc(doc(db, collectionName, this.generateId(6, this.name)), {
-        name: this.name,
-        count: this.count,
-        accept: this.getAcceptedValue(),
-        notes: this.notes,
+    await setDoc(doc(db, collectionName, generateId(6, name)), {
+        name: name,
+        count: count,
+        accept: getAcceptedValue(),
+        notes: notes,
         created: Timestamp.now()
     });
 
-    this.submitted = true
+    submitted.value = true
 }
 
 function getAcceptedValue() {
     let accepted = false;
 
-    if (this.accept === true || this.accept === 'true') {
+    if (accept.value === true) {
         accepted = true;
     }
     return accepted;
@@ -62,13 +62,13 @@ function generateId(length: number, name: string) {
             <div class="text-4xl tracking-widest">RSVP</div>
             <div class="text-sm upper">We've reserved a seat(s) for you. The favor of your reply is requested until <strong>May 30, 2025</strong></div>
             <div v-if="submitted">
-                <div class="bg-green-600 p-6 mt-2 text-gray-50 rounded-lg">
+                <div class="p-6 mt-2 text-gray-50 rounded-lg" v-bind:class="{ 'bg-red-800' : !getAcceptedValue(), 'bg-green-600': getAcceptedValue() }">
                     <span v-if="!getAcceptedValue()">We are sad to know that you have decline your attendance to our event. But we really appreciate it! Have a good day to you!</span>
                     <span v-if="getAcceptedValue()">We are happy that you have confirmed your attendance to our event. We really appreciate it! We look forward to seeing you soon!</span> 
                 </div>
             </div>
             <div v-if="!submitted">
-                <div class="mt-4 flex flex-wrap" v-if="!submitted">
+                <div class="mt-4 flex flex-wrap">
                     <div class="my-auto w-full lg:w-1/3 xl:w-1/3">Name:</div>
                     <div class="w-full lg:w-2/3 xl:w-2/3">
                         <input type="text" v-model="name" class="border rounded-lg p-2 w-full shadow" style="border-color: #a74d0f;" v-bind:class="{ 'border-red-800' : errors.name.length > 0}" />

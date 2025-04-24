@@ -3,15 +3,17 @@ import { onMounted, ref } from 'vue'
 import { useCollection } from 'vuefire'
 import { query, orderBy, getAggregateFromServer, sum, where } from 'firebase/firestore'
 import { rsvpRef } from '../firebase'
+import { RsvpModel } from '../models/RsvpModel'
 
-let todos = []
+let todos = ref([])
 let total = ref(0)
 let totalSlots = ref(200)
 let totalAvailable = ref(0)
 
 onMounted(async () => {
     const qr = query(rsvpRef, orderBy('created', 'desc'))
-    todos = useCollection(qr)
+    todos = useCollection<RsvpModel>(qr).data
+    todos.value = await todos.value
 
     const qrTotal = query(rsvpRef, where('accept', '==', true))
 

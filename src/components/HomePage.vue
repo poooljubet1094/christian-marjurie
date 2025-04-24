@@ -4,12 +4,12 @@
 
 <template>
     <div class="flex justify-around flex-wrap space-x-1 space-y-1 lg:space-x-4">
-        <img src="../assets/gallery/IMG_6356.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl " />
-        <img src="../assets/gallery/IMG_7411.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
-        <img src="../assets/gallery/IMG_7412.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
-        <img src="../assets/gallery/IMG_7549.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
-        <img src="../assets/gallery/IMG_7796.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
-        <img src="../assets/gallery/IMG_7952.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
+        <img src="../assets/gallery/image2.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl " />
+        <img src="../assets/gallery/taiwan/image3.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
+        <img src="../assets/gallery/taiwan/image2.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
+        <img src="../assets/gallery/taiwan/image4.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
+        <img src="../assets/gallery/taiwan/image7.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
+        <img src="../assets/gallery/taiwan/image8.jpeg" alt="Hero Image" class="w-auto h-52 shadow-2xl" />
     </div>
     <div class="mt-8 font-serif text-center mx-6 tracking-widest w-full max-w-4xl p-6">
         <div class="w-full flex justify-center">

@@ -4,8 +4,6 @@ import { ref, onMounted } from 'vue'
 
 const audioPlayer = ref<HTMLAudioElement | null>(null)
 
-console.log(audioPlayer.value);
-
 const playAudio = () => {
   if (audioPlayer.value) {
     audioPlayer.value.play()

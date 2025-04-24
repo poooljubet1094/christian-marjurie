@@ -4,7 +4,7 @@
 
 <template>
     <div class="w-full flex flex-col items-center px-2 uppercase max-w-3xl">
-        <div class="text-6xl text-center capitalize">Gonzaga - Jumawan</div>
+        <div class="text-6xl text-center capitalize font-pinyon">Gonzaga - Jumawan</div>
         <div class="mt-4 font-serif">Nuptials</div>
         <div class="mt-4 w-full font-serif flex flex-col lg:flex-row justify-between gap-4 text-center">
             <div class="w-full">
@@ -18,7 +18,7 @@
                 <div class="">Florentina Jumawan</div>
             </div>
         </div>
-        <div class="mt-6 text-4xl capitalize">Principal Sponsors</div>
+        <div class="mt-6 text-4xl capitalize font-pinyon">Principal Sponsors</div>
         <div class="mt-0 font-serif text-xs">To Stand as witness in our vows</div>
         <div class="mt-4 w-full font-serif flex flex-col lg:flex-row justify-between gap-4 text-center">
             <div class="w-full">
@@ -63,7 +63,7 @@
                 <div class="">Chrizaneth Gonzaga-Fidel</div>
             </div>
         </div>
-        <div class="mt-6 text-4xl capitalize">Secondary Sponsors</div>
+        <div class="mt-6 text-4xl capitalize font-pinyon">Secondary Sponsors</div>
         <div class="mt-0 font-serif text-xs">To assist us in our needs</div>
         <div class="mt-4 w-full font-serif flex flex-col lg:flex-row justify-between gap-4 text-center">
             <div class="w-full">

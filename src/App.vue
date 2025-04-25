@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import NavMenu from './components/NavMenu.vue'
 import { ref, onMounted } from 'vue'
-import { useHead } from '@unhead/vue'
 
 const audioPlayer = ref<HTMLAudioElement | null>(null)
 
@@ -13,42 +12,6 @@ const playAudio = () => {
 
 onMounted(() => {
   setInterval(() => playAudio(), 3000);
-})
-
-useHead({
-  title: 'Christian & Marjurie',
-  meta: [
-    {
-      name: 'ogTitle',
-      content: 'Christian & Marjurie Wedding Website',
-      property: 'og:title'
-    },
-    {
-      name: 'ogDescription',
-      content: 'We invite you to share with us a celebration of friendship, love, and commitment in the sacrament of holy matrimony.',
-      property: 'og:description'
-    },
-    {
-      name: 'ogImage',
-      content: 'https://christian-marjurie.com/assets/image3-D2xRjI_o.jpeg',
-      property: 'og:image'
-    },
-    {
-      name: 'ogUrl',
-      content: 'https://christian-marjurie.com/',
-      property: 'og:url'
-    },
-    {
-      name: 'ogType',
-      content: 'website',
-      property: 'og:type'
-    },
-    {
-      name: 'ogAuthor',
-      content: 'PJ Calibuso',
-      property: 'og:author'
-    }
-  ]
 })
 
 </script>

@@ -11,7 +11,7 @@ function engagementRight() {
 }
 
 function taiwanLeft() {
-    const scrollContainer = document.querySelector('.tailwan-scroll');
+    const scrollContainer = document.querySelector('.taiwan-scroll');
     scrollToLeft(scrollContainer);
 }
 
@@ -56,21 +56,6 @@ function scrollToRight(scrollContainer: any) {
         <div class="relative w-full">
             <div class="engagement-scroll overflow-x-scroll overflow-hidden mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-6xl xl:max-w-6xl">
                 <div class="flex flex-nowrap w-full justify-between gap-4 mb-4">
-                    <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                        <img src="../assets/gallery/engagement/image1.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
-                    </div>
-                    <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                        <img src="../assets/gallery/engagement/image2.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
-                    </div>
-                    <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                        <img src="../assets/gallery/engagement/image3.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
-                    </div>
-                    <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                        <img src="../assets/gallery/engagement/image4.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
-                    </div>
-                    <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
-                        <img src="../assets/gallery/engagement/image5.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
-                    </div>
                     <div class="w-auto h-auto rounded-2xl shadow p-2 bg-amber-50 shrink-0">
                         <img src="../assets/gallery/engagement/image6.jpg" alt="Hero Image" class="w-auto h-96 rounded-2xl object-contain bg-amber-50" />
                     </div>

@@ -15,7 +15,7 @@
             <div class="w-full">
                 <div class="font-bold">Parents of the Bride</div>
                 <div class="">Elbert Jumawan</div>
-                <div class="">Florentina Jumawan</div>
+                <div class="">Florentina Figuracion</div>
             </div>
         </div>
         <div class="mt-6 text-4xl capitalize font-pinyon">Principal Sponsors</div>
@@ -33,7 +33,7 @@
             </div>
             <div class="w-full">
                 <div class="">Vina Corcuera-Dones</div>
-                <div class="">Ethel Gonzales</div>
+                <div class="">Ethelyn Gonzales</div>
                 <div class="">Aurea Bobadilla</div>
                 <div class="">Merlita Fidel</div>
                 <div class="">Hermes Gonzales Sebastian</div>
@@ -76,7 +76,7 @@
                 <div class="font-pinyon capitalize text-2xl">Cord</div>
                 <div class="mt-0 font-serif text-xs">To bind us together</div>
                 <div class="">Jesson Mar Jumawan</div>
-                <div class="">El Flor Dula</div>
+                <div class="">El Flor Dulla</div>
             </div>
         </div>
         <div class="mt-4 w-full font-serif flex flex-col lg:flex-row justify-between gap-4 text-center">
@@ -95,7 +95,7 @@
                 <div class="">Ryan Broas</div>
                 <div class="">John Lorenz Lubag</div>
                 <div class="">Gabriel Flores</div>
-                <div class="">Jeffrey Contada</div>
+                <div class="">Jeffrey Cantada</div>
                 <div class="">John Lawrence Dulla</div>
             </div>
             <div class="w-full">
@@ -132,7 +132,7 @@
             <div class="w-full">
                 <div class="font-pinyon capitalize text-2xl">Flower Girls</div>
                 <div class="mt-0 font-serif text-xs">To shower the aisle with flowers</div>
-                <div class="">Yzab Kiera Penaredondo</div>
+                <div class="">Yzab Kiera Peñaredondo</div>
                 <div class="">Cassiopeia Hope Montevirgen</div>
             </div>
         </div>

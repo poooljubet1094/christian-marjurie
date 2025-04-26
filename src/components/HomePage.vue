@@ -1,21 +1,72 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
+let scrollContainer = ref<HTMLElement | null>(null);
+let scrollLeftReached = ref(true);
+let scrollRightReached = ref(false);
+
+onMounted(() => {
+    scrollContainer.value = document.querySelector('.home-scroll');
+
+    setInterval(() => {
+        if (scrollRightReached.value) {
+            console.log('Reached the end of the scroll');
+            scrollContainer.value.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
+            scrollRightReached.value = false;
+            scrollLeftReached.value = true;
+        } else {
+            scrollToRight();
+        }
+    }, 3000);
+
+    scrollContainer.value.addEventListener('scroll', (e) => {
+        // const target = e.target as HTMLElement;
+        // const scrollLeft = target.scrollLeft;
+        // const scrollWidth = target.scrollWidth;
+        // const clientWidth = target.clientWidth;
+
+        // if (scrollLeft + clientWidth >= scrollWidth) {
+        //     console.log('Reached the end of the scroll');
+        // } else if (scrollLeft === 0) {
+        //     console.log('Reached the start of the scroll');
+        // }
+    });
+});
+
 function scrollToLeft() {
-    const scrollContainer = document.querySelector('.home-scroll');
-    if (scrollContainer) {
-        scrollContainer.scrollBy({
-            left: -scrollContainer.clientWidth,
+    const scrollLeft = scrollContainer.value.scrollLeft
+
+    if (scrollContainer.value && !(scrollLeft <= 0)) {
+        scrollContainer.value.scrollBy({
+            left: -(scrollContainer.value.clientWidth / 3),
             behavior: 'smooth'
         });
+        scrollRightReached.value = false;
+    }
+
+    if (scrollLeft === 0) {
+        scrollLeftReached.value = true;
     }
 }
 
 function scrollToRight() {
-    const scrollContainer = document.querySelector('.home-scroll');
-    if (scrollContainer) {
-        scrollContainer.scrollBy({
-            left: scrollContainer.clientWidth,
+    const scrollLeft = scrollContainer.value.scrollLeft
+    const scrollWidth = scrollContainer.value.scrollWidth
+    const clientWidth = scrollContainer.value.clientWidth
+
+    if (scrollContainer && !(scrollLeft + clientWidth >= scrollWidth)) {
+        scrollContainer.value.scrollBy({
+            left: clientWidth / 3,
             behavior: 'smooth'
         });
+        scrollLeftReached.value = false;
+    }
+
+    if (scrollLeft + clientWidth >= scrollWidth) {
+        scrollRightReached.value = true;
     }
 }
 </script>

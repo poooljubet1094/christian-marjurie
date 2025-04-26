@@ -45,7 +45,7 @@
                 <div class="my-auto text-4xl text-primary font-croissant">First Dance</div>
                 <div class="my-auto font-josefin-san text-lg">5:15 PM</div>
                 <div class="uppercase font-josefin-san mt-2 text-sm text-start lg:text-end xl:text-end">
-                    Please join us for our first dance as a married couple. We will be dancing to "Perfect" by Ed Sheeran.
+                    Please join us for our first dance as a married couple. We will be dancing to "Forever and ever and always" by Ryan Mack.
                 </div>
             </div>
             <div class="w-full lg:w-1/2 xl:w-1/2 h-0 lg:h-auto xl:h-auto">

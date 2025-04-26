@@ -10,7 +10,6 @@ onMounted(() => {
 
     setInterval(() => {
         if (scrollRightReached.value) {
-            console.log('Reached the end of the scroll');
             scrollContainer.value.scrollTo({
                 left: 0,
                 behavior: 'smooth'
@@ -21,19 +20,6 @@ onMounted(() => {
             scrollToRight();
         }
     }, 3000);
-
-    scrollContainer.value.addEventListener('scroll', (e) => {
-        // const target = e.target as HTMLElement;
-        // const scrollLeft = target.scrollLeft;
-        // const scrollWidth = target.scrollWidth;
-        // const clientWidth = target.clientWidth;
-
-        // if (scrollLeft + clientWidth >= scrollWidth) {
-        //     console.log('Reached the end of the scroll');
-        // } else if (scrollLeft === 0) {
-        //     console.log('Reached the start of the scroll');
-        // }
-    });
 });
 
 function scrollToLeft() {
